@@ -1,10 +1,11 @@
-# Simple Electron (Electron Forge) React (Vite Typescript) Boilerplate
+# Simple Electron (Electron Forge) React (Vite Typescript) Boilerplate With Tailwind CSS
 
 ### Technologies used in this project:
 
 - **Electron Forge** : an all-in-one tool for packaging and distributing Electron applications
 - **React**
 - **Vite with Typescript**
+- **Tailwind CSS**
 
 ## Guides to start the project from the beginning
 
@@ -30,11 +31,12 @@ npm start
 
 ### Some Aditional Important Suggestions:
 
-- I included the .env file also If want, you can change the `port` there
+- I included the .env file also If you want, you can change the `port` number there
 
 - Don't forget to add the `.env` in the `.gitignore` file
 
 - To ignore this error :
+
   "Request Autofill.setAddresses failed. {"code":-32601,"message":"'Autofill.setAddresses' wasn't found"}", source: devtools://devtools/bundled/core/protocol_client/protocol_client.js (1)
 
   You can comment this out from `main.ts` file
