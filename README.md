@@ -28,6 +28,18 @@ After that open another terminal and start the electron project with:
 npm start
 ```
 
-### I included the .env file also If want, you can change the `port` there
+### Some Aditional Important Suggestions:
 
-### Don't forget to add the `.env` in the `.gitignore` file
+- I included the .env file also If want, you can change the `port` there
+
+- Don't forget to add the `.env` in the `.gitignore` file
+
+- To ignore this error :
+  "Request Autofill.setAddresses failed. {"code":-32601,"message":"'Autofill.setAddresses' wasn't found"}", source: devtools://devtools/bundled/core/protocol_client/protocol_client.js (1)
+
+  You can comment this out from `main.ts` file
+
+  ```js
+  // Open DevTools for debugging (optional)
+  mainWindow.webContents.openDevTools();
+  ```
